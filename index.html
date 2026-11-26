@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kevin Sun's portfolio of Python, SQL, and business analytics projects.">
+  <title>Kevin Sun | Business Analytics</title>
+  <style>
+    :root { color-scheme: light; --paper: #f6f4ee; --ink: #202b2b; --muted: #536362; --accent: #16645a; --line: #c9d1cb; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; }
+    a { color: var(--accent); text-underline-offset: .25em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    .wrap { width: min(100% - 3rem, 1040px); margin-inline: auto; }
+    .skip { position: absolute; left: 1rem; top: -5rem; padding: .5rem; background: white; }
+    .skip:focus { top: 1rem; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1.6rem; border-bottom: 1px solid var(--line); }
+    .name { color: var(--ink); font-weight: 700; text-decoration: none; letter-spacing: -.03em; font-size: 1.2rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 1.4rem; font-size: .95rem; }
+    nav a { text-decoration: none; }
+    .hero { padding-block: clamp(4rem, 10vw, 7rem); max-width: 850px; }
+    .eyebrow { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { font-size: clamp(3.4rem, 9vw, 6.5rem); line-height: 1.02; letter-spacing: -.065em; margin: 1.1rem 0 1.6rem; font-weight: 650; }
+    .intro { font-size: clamp(1.1rem, 2vw, 1.3rem); max-width: 610px; color: var(--muted); }
+    .hero-links { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem; }
+    section { border-top: 1px solid var(--line); padding-block: 2.5rem; scroll-margin-top: 1rem; }
+    .section-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: 1.5rem; }
+    h2 { margin: 0; font-size: 1.6rem; letter-spacing: -.035em; }
+    .label { color: var(--muted); font-size: .85rem; }
+    .project { display: grid; grid-template-columns: 50px 1fr auto; gap: 1.5rem; align-items: start; padding-block: 1.7rem; border-top: 1px solid var(--line); }
+    .number { color: var(--accent); font-size: .9rem; padding-top: .2rem; }
+    h3 { margin: 0 0 .5rem; font-size: 1.3rem; font-weight: 600; letter-spacing: -.02em; }
+    .project p { margin: 0; max-width: 610px; color: var(--muted); }
+    .project a { white-space: nowrap; padding-top: .2rem; }
+    .tags { display: block; margin-top: .8rem; color: var(--accent); font-size: .85rem; }
+    .about { max-width: 690px; color: var(--muted); font-size: 1.05rem; }
+    footer { border-top: 1px solid var(--line); padding-block: 1.8rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: .85rem; color: var(--muted); }
+    @media (max-width: 600px) {
+      .wrap { width: calc(100% - 2rem); }
+      header { align-items: flex-start; }
+      nav { gap: .9rem; font-size: .85rem; }
+      .hero { padding-block: 4rem; }
+      .section-head { display: block; }
+      .project { grid-template-columns: 30px 1fr; gap: 1rem; }
+      .project > a { grid-column: 2; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <a class="name" href="./">Kevin Sun</a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/KevinSun2">GitHub</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <p class="eyebrow">Business analytics / Python / SQL</p>
+        <h1>From data to<br>useful decisions.</h1>
+        <p class="intro">I'm Kevin Sun, a graduate business student building practical skills in Python, SQL, and analytics. This is a collection of the projects I'm working on.</p>
+        <div class="hero-links">
+          <a href="#projects">Explore my work</a>
+          <a href="https://github.com/KevinSun2/oim7510">View coursework on GitHub</a>
+        </div>
+      </div>
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="section-head">
+          <h2 id="projects-title">Selected work</h2>
+          <span class="label">Coursework &amp; projects</span>
+        </div>
+        <article class="project">
+          <span class="number" aria-hidden="true">01</span>
+          <div>
+            <h3>Database analytics</h3>
+            <p>A relational database project using linked tables and SQL queries to answer business questions.</p>
+            <span class="tags">SQL &middot; Database design &middot; Python</span>
+          </div>
+          <a href="https://github.com/KevinSun2/oim7510/tree/main/projects/db" aria-label="View database analytics project">View project &rarr;</a>
+        </article>
+        <article class="project">
+          <span class="number" aria-hidden="true">02</span>
+          <div>
+            <h3>Python analytics notebooks</h3>
+            <p>Hands-on work with Python, data files, APIs, and SQL, documented in interactive marimo notebooks.</p>
+            <span class="tags">Python &middot; Data analysis &middot; marimo</span>
+          </div>
+          <a href="https://github.com/KevinSun2/oim7510/tree/main/notebooks" aria-label="View Python analytics notebooks">View notebooks &rarr;</a>
+        </article>
+      </section>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p class="about">I'm interested in how data can make business questions easier to understand and decisions easier to explain. My current work focuses on connecting data, writing clear queries, and turning the results into useful tools.</p>
+        <p><a href="https://github.com/KevinSun2">Follow my work on GitHub &rarr;</a></p>
+      </section>
+    </main>
+    <footer>
+      <span>Kevin Sun</span>
+      <span>Built with HTML &amp; CSS. Hosted on GitHub Pages.</span>
+    </footer>
+  </div>
+</body>
+</html>
